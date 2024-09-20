@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="42.576" tests="6" skipped="0" failures="0" errors="0">
+<testcase classname="Amazon Login and Shopping" name="Validate userid" time="30.064">
+<system-out><![CDATA[
+Given I open browser "chrome" with url "https://www.amazon.in" and reportname "AmazonLogin" testname "Login".passed
+And click signin button.....................................................passed
+When I enter valid userid "paragguide@yahoo.co.in"..........................passed
+And click continue button...................................................passed
+Then error message should not come..........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Amazon Login and Shopping" name="Validate password" time="11.358">
+<system-out><![CDATA[
+Given userid is valid.......................................................passed
+When i enter valid password "RMinfotech12#&&"...............................passed
+And click submit............................................................passed
+Then i should login.........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Amazon Login and Shopping" name="Search Products - #2.1" time="0.005">
+<system-out><![CDATA[
+Given you are logged in.....................................................passed
+When you search for product LCD in rage 8500................................passed
+Then results must come......................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Amazon Login and Shopping" name="Search Products - #2.2" time="0.004">
+<system-out><![CDATA[
+Given you are logged in.....................................................passed
+When you search for product Mobile in rage 7500.............................passed
+Then results must come......................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Amazon Login and Shopping" name="Search Products - #2.3" time="0.004">
+<system-out><![CDATA[
+Given you are logged in.....................................................passed
+When you search for product Laptop in rage 36000............................passed
+Then results must come......................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Amazon Login and Shopping" name="close browser" time="0.789">
+<system-out><![CDATA[
+When close browser end test.................................................passed
+]]></system-out>
+</testcase>
+</testsuite>
